@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sidebar Menu</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".menu-icon").click(function(){
+				$(".menu-icon").toggleClass("active")
+			})
+
+			$(".menu-icon").click(function(){
+				$(".sidebar").toggleClass("active")
+			})
+		})
+	</script>
+</head>
+<body>
+	<div class="menu-icon">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+	<div class="sidebar">
+		<a href="#"><img src="logo.png"></a>
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+		<ul class="social-icon">
+			<li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter" aria-hiden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-google-plus" aria-hiden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin" aria-hiden="true"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram" aria-hiden="true"></i></a></li>
+		</ul>
+	</div>
+</body>
+</html>
